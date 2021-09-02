@@ -1,4 +1,4 @@
-# File updated on..2021 Sep 02 12:44 PM -0400
+# File updated on..2021 Sep 02 12:46 PM -0400
 
 |Question ID|Question Link|yaya|Wayne|Lu|Jsu|Emily|Yuwei|Danli|Miaomiao|Little Lee|Tim|Strawberry|pikapika|Caoyan|Max Chip|Ames|kingsley|Peter Cai|busimiao|yigepangzi|Kangkai|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
@@ -41,7 +41,7 @@
 |37|[sudoku-solver](https://leetcode.com/problems/sudoku-solver)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
 |44|[wildcard-matching](https://leetcode.com/problems/wildcard-matching)|#n/a|#n/a|2021 Aug 28 21:58 PM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Aug 29 22:35 PM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Aug 28 21:51 PM|
 |212|[word-search-ii](https://leetcode.com/problems/word-search-ii)|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Aug 30 10:30 AM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
-|120|[triangle](https://leetcode.com/problems/triangle)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 02:54 AM|#n/a|#n/a|
+|120|[triangle](https://leetcode.com/problems/triangle)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 02 12:44 PM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 02:54 AM|#n/a|#n/a|
 |312|[burst-balloons](https://leetcode.com/problems/burst-balloons)|#n/a|2021 Apr 07 23:32 PM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
 |698|[partition-to-k-equal-sum-subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets)|#n/a|#n/a|#n/a|#n/a|2021 Aug 28 19:36 PM|2021 Aug 29 11:54 AM|2021 Aug 29 14:28 PM|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Aug 29 13:27 PM|#n/a|2021 Aug 29 20:19 PM|#n/a|#n/a|#n/a|#n/a|#n/a|
 |97|[interleaving-string](https://leetcode.com/problems/interleaving-string)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
