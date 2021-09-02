@@ -1,7 +1,7 @@
-File updated on..2021 Sep 01 20:08 PM -0400
+File updated on..2021 Sep 01 20:10 PM -0400
 |Question ID|Question Link|Lu|Little Lee|
 |-|-|-|-|
-|1413|[minimum-value-to-get-positive-step-by-step-sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum)|#n/a|#n/a|
+|1413|[minimum-value-to-get-positive-step-by-step-sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum)|#n/a|2021 Sep 01 20:09 PM|
 |62|[unique-paths](https://leetcode.com/problems/unique-paths)|#n/a|#n/a|
 |1086|[high-five](https://leetcode.com/problems/high-five)|#n/a|#n/a|
 |1146|[snapshot-array](https://leetcode.com/problems/snapshot-array)|#n/a|#n/a|
