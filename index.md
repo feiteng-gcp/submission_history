@@ -1,4 +1,4 @@
-# File updated on..2021 Sep 02 10:09 AM -0400
+# File updated on..2021 Sep 02 11:58 AM -0400
 
 |Question ID|Question Link|yaya|Wayne|Lu|Jsu|Emily|Yuwei|Danli|Miaomiao|Little Lee|Tim|Strawberry|pikapika|Caoyan|Max Chip|Ames|kingsley|Peter Cai|busimiao|yigepangzi|Kangkai|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
@@ -9,9 +9,9 @@
 |1177|[can-make-palindrome-from-substring](https://leetcode.com/problems/can-make-palindrome-from-substring)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 12:11 PM|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 07:45 AM|#n/a|
 |1011|[capacity-to-ship-packages-within-d-days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 12:27 PM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
 |670|[maximum-swap](https://leetcode.com/problems/maximum-swap)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 02 09:51 AM|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 14:03 PM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
-|1010|[pairs-of-songs-with-total-durations-divisible-by-60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
-|55|[jump-game](https://leetcode.com/problems/jump-game)|#n/a|#n/a|#n/a|2021 Sep 02 02:35 AM|#n/a|#n/a|#n/a|#n/a|2021 Sep 02 09:49 AM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
-|1329|[sort-the-matrix-diagonally](https://leetcode.com/problems/sort-the-matrix-diagonally)|2021 Jul 30 00:38 AM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 02 09:48 AM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
+|1010|[pairs-of-songs-with-total-durations-divisible-by-60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 02 11:30 AM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
+|55|[jump-game](https://leetcode.com/problems/jump-game)|#n/a|#n/a|#n/a|2021 Sep 02 02:35 AM|#n/a|#n/a|#n/a|#n/a|2021 Sep 02 09:49 AM|#n/a|#n/a|#n/a|#n/a|2021 Sep 02 11:38 AM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
+|1329|[sort-the-matrix-diagonally](https://leetcode.com/problems/sort-the-matrix-diagonally)|2021 Jul 30 00:38 AM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 02 09:48 AM|#n/a|#n/a|#n/a|#n/a|2021 Sep 02 11:34 AM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
 |609|[find-duplicate-file-in-system](https://leetcode.com/problems/find-duplicate-file-in-system)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
 |32|[longest-valid-parentheses](https://leetcode.com/problems/longest-valid-parentheses)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
 |468|[validate-ip-address](https://leetcode.com/problems/validate-ip-address)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
