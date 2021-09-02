@@ -1,4 +1,4 @@
-File updated on..2021 Sep 01 20:06 PM -0400
+File updated on..2021 Sep 01 20:07 PM -0400
 |Question ID|Question Link|Lu|Little Lee|
 |-|-|-|-|
 |1413|[minimum-value-to-get-positive-step-by-step-sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum)|#n/a|#n/a|
