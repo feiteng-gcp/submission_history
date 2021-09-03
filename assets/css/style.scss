@@ -3,6 +3,7 @@
 
 @import "{{ site.theme }}";
 
-.shell {
-  margin-left:1px;
+.inner {
+  position: relative;
+  margin:0 auto;
 }
