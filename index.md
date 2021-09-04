@@ -1,4 +1,4 @@
-# File updated on..2021 Sep 04 17:49 PM -0400
+# File updated on..2021 Sep 04 17:50 PM -0400
 
 |Question ID|Question Link|yaya|Wayne|Lu|Jsu|Emily|Yuwei|Danli|Miaomiao|Little Lee|Tim|Strawberry|pikapika|Caoyan|Max Chip|Ames|kingsley|Peter Cai|busimiao|yigepangzi|Kangkai|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
@@ -15,7 +15,7 @@
 |609|[find-duplicate-file-in-system](https://leetcode.com/problems/find-duplicate-file-in-system)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 02 12:29 PM|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 04 14:00 PM|
 |32|[longest-valid-parentheses](https://leetcode.com/problems/longest-valid-parentheses)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 02 13:57 PM|#n/a|#n/a|#n/a|#n/a|2021 Sep 02 12:28 PM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
 |468|[validate-ip-address](https://leetcode.com/problems/validate-ip-address)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 04 09:44 AM|#n/a|#n/a|#n/a|#n/a|2021 Sep 03 14:28 PM|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 02 22:33 PM|
-|8|[string-to-integer-atoi](https://leetcode.com/problems/string-to-integer-atoi)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 04 14:57 PM|
+|8|[string-to-integer-atoi](https://leetcode.com/problems/string-to-integer-atoi)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 04 17:49 PM|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 04 14:57 PM|
 |539|[minimum-time-difference](https://leetcode.com/problems/minimum-time-difference)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
 |12|[integer-to-roman](https://leetcode.com/problems/integer-to-roman)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 02 00:00 AM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
 |151|[reverse-words-in-a-string](https://leetcode.com/problems/reverse-words-in-a-string)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
