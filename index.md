@@ -1,8 +1,8 @@
-# File updated on..2021 Sep 04 22:00 PM -0400
+# File updated on..2021 Sep 04 22:01 PM -0400
 
 |Question ID|Question Link|yaya|Wayne|Lu|Jsu|Emily|Yuwei|Danli|Miaomiao|Little Lee|Tim|Strawberry|pikapika|Caoyan|Max Chip|Ames|kingsley|Peter Cai|busimiao|yigepangzi|Kangkai|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
-|1413|[minimum-value-to-get-positive-step-by-step-sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum)|#n/a|#n/a|2021 Sep 03 22:54 PM|2021 Aug 30 18:27 PM|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 20:09 PM|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 11:14 AM|#n/a|#n/a|#n/a|2021 Aug 30 22:21 PM|2021 Aug 29 21:40 PM|2021 Aug 31 08:51 AM|
+|1413|[minimum-value-to-get-positive-step-by-step-sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum)|#n/a|#n/a|2021 Sep 03 22:54 PM|2021 Aug 30 18:27 PM|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 20:09 PM|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 11:14 AM|#n/a|#n/a|2021 Sep 04 22:01 PM|2021 Aug 30 22:21 PM|2021 Aug 29 21:40 PM|2021 Aug 31 08:51 AM|
 |62|[unique-paths](https://leetcode.com/problems/unique-paths)|#n/a|#n/a|2021 Sep 03 03:12 AM|2021 Aug 30 18:49 PM|#n/a|#n/a|#n/a|#n/a|2021 Sep 02 00:31 AM|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 11:22 AM|#n/a|#n/a|#n/a|2021 Aug 30 22:26 PM|2021 Aug 29 23:31 PM|2021 Aug 31 22:31 PM|
 |1086|[high-five](https://leetcode.com/problems/high-five)|#n/a|#n/a|2021 Sep 03 23:26 PM|2021 Aug 30 19:29 PM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 11:22 AM|#n/a|#n/a|#n/a|#n/a|2021 Aug 31 07:49 AM|2021 Sep 01 21:20 PM|
 |1146|[snapshot-array](https://leetcode.com/problems/snapshot-array)|#n/a|#n/a|#n/a|2021 Sep 04 17:31 PM|#n/a|#n/a|#n/a|#n/a|2021 Sep 04 19:18 PM|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 11:37 AM|#n/a|#n/a|#n/a|2021 Aug 31 01:06 AM|#n/a|#n/a|
