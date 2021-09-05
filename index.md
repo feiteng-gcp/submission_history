@@ -1,9 +1,9 @@
-# File updated on..2021 Sep 05 13:32 PM -0400
+# File updated on..2021 Sep 05 13:33 PM -0400
 
 |Question ID|Question Link|yaya|Wayne|Lu|Jsu|Emily|Yuwei|Danli|Miaomiao|Little Lee|Tim|Strawberry|pikapika|Caoyan|Max Chip|Ames|kingsley|Peter Cai|busimiao|yigepangzi|Kangkai|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |1413|[minimum-value-to-get-positive-step-by-step-sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum)|#n/a|#n/a|2021 Sep 03 22:54 PM|2021 Aug 30 18:27 PM|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 20:09 PM|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 11:14 AM|#n/a|#n/a|2021 Sep 04 22:01 PM|2021 Aug 30 22:21 PM|2021 Aug 31 07:46 AM|2021 Aug 31 08:51 AM|
-|62|[unique-paths](https://leetcode.com/problems/unique-paths)|#n/a|#n/a|2021 Sep 03 03:12 AM|2021 Aug 30 18:49 PM|#n/a|#n/a|#n/a|#n/a|2021 Sep 02 00:31 AM|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 11:22 AM|#n/a|#n/a|2021 Sep 04 22:16 PM|2021 Aug 30 22:26 PM|2021 Aug 29 23:31 PM|2021 Aug 31 22:31 PM|
+|62|[unique-paths](https://leetcode.com/problems/unique-paths)|#n/a|#n/a|2021 Sep 03 03:12 AM|2021 Aug 30 18:49 PM|#n/a|#n/a|#n/a|#n/a|2021 Sep 02 00:31 AM|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 11:22 AM|#n/a|#n/a|2021 Sep 04 22:16 PM|2021 Aug 30 22:26 PM|2021 Aug 31 07:47 AM|2021 Aug 31 22:31 PM|
 |1086|[high-five](https://leetcode.com/problems/high-five)|#n/a|#n/a|2021 Sep 03 23:26 PM|2021 Aug 30 19:29 PM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 11:22 AM|#n/a|#n/a|2021 Sep 04 23:30 PM|#n/a|2021 Aug 31 07:49 AM|2021 Sep 01 21:20 PM|
 |1146|[snapshot-array](https://leetcode.com/problems/snapshot-array)|#n/a|#n/a|#n/a|2021 Sep 04 17:31 PM|#n/a|#n/a|#n/a|#n/a|2021 Sep 04 19:18 PM|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 11:37 AM|#n/a|#n/a|#n/a|2021 Aug 31 01:06 AM|#n/a|#n/a|
 |1177|[can-make-palindrome-from-substring](https://leetcode.com/problems/can-make-palindrome-from-substring)|#n/a|#n/a|#n/a|2021 Sep 04 18:40 PM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 12:11 PM|#n/a|#n/a|#n/a|#n/a|2021 Sep 01 07:45 AM|#n/a|
@@ -23,7 +23,7 @@
 |126|[word-ladder-ii](https://leetcode.com/problems/word-ladder-ii)|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Aug 30 10:45 AM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
 |38|[count-and-say](https://leetcode.com/problems/count-and-say)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
 |749|[contain-virus](https://leetcode.com/problems/contain-virus)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
-|979|[distribute-coins-in-binary-tree](https://leetcode.com/problems/distribute-coins-in-binary-tree)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 04 00:21 AM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
+|979|[distribute-coins-in-binary-tree](https://leetcode.com/problems/distribute-coins-in-binary-tree)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 04 00:21 AM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 05 13:33 PM|#n/a|
 |721|[accounts-merge](https://leetcode.com/problems/accounts-merge)|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Aug 30 12:08 PM|#n/a|#n/a|#n/a|#n/a|2021 Sep 03 22:58 PM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
 |863|[all-nodes-distance-k-in-binary-tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
 |332|[reconstruct-itinerary](https://leetcode.com/problems/reconstruct-itinerary)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
