@@ -49,5 +49,5 @@
 |87|[scramble-string](https://leetcode.com/problems/scramble-string)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 07 13:57 PM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
 |1359|[count-all-valid-pickup-and-delivery-options](https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options)|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
 |1025|[divisor-game](https://leetcode.com/problems/divisor-game)|#n/a|#n/a|#n/a|2021 Sep 04 16:51 PM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
-|471|[encode-string-with-shortest-length](https://leetcode.com/problems/encode-string-with-shortest-length)|#n/a|#n/a|#n/a|2021 Sep 02 00:11 AM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
+|471|[encode-string-with-shortest-length](https://leetcode.com/problems/encode-string-with-shortest-length)|#n/a|#n/a|#n/a|2021 Sep 02 00:11 AM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|2021 Sep 07 14:07 PM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
 |256|[paint-house](https://leetcode.com/problems/paint-house)|#n/a|#n/a|#n/a|2021 Sep 02 00:25 AM|#n/a|#n/a|#n/a|#n/a|2021 Sep 03 13:36 PM|#n/a|#n/a|#n/a|#n/a|2021 Sep 07 14:02 PM|#n/a|#n/a|#n/a|#n/a|#n/a|#n/a|
