@@ -40,7 +40,7 @@
         const request = new XMLHttpRequest();
         url = "https://raw.githubusercontent.com/feiteng-gcp/submission_history/master/assets/submission.json";
         // url = "assets/submission.json";
-        request.open("get", url);
+        request.open("get", url + "?" + ((new Date()).getTime());
 
         request.onload = () => 
         {
@@ -58,7 +58,7 @@
 
         url = "https://raw.githubusercontent.com/feiteng-gcp/submission_history/master/assets/last_modified.json";
         
-        xhttp.open("get", url);
+        xhttp.open("get", url + "?" + ((new Date()).getTime());
 
         xhttp.onload = () => 
         {
