@@ -36,7 +36,8 @@
     function loadRankings()
     {
         const request = new XMLHttpRequest();
-        url = "https://raw.githubusercontent.com/feiteng-gcp/submission_history/master/assets/submission.json";
+        // url = "https://raw.githubusercontent.com/feiteng-gcp/submission_history/master/assets/submission.json";
+        url = "assets/submission.json";
         request.open("get", url);
 
         request.onload = () => 
