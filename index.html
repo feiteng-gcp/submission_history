@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+
+    <link rel="stylesheet" type="text/css" href="">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <style type="text/css">
+        
+    </style>
+
+</head>
+<body>
+
+    <div style="margin: 25px"> 
+        <h3>养老对赌刷题小组 第5轮</h3>
+        <h4>Deadline: 9/26/2021</h4>
+    </div>   
+
+    <div class='col' style="height: 200px;width: 150px;font-size: xx-small; margin:25px" >
+        
+        <table id="myTable" class="table table-bordered table-hover table-sm table-responsive">
+            <thead> </thead>
+            <tbody> </tbody>
+        </table>
+
+    </div>
+
+
+<script type="text/javascript">
+    const rankingsBody = document.querySelector("#myTable > tbody")
+
+    function loadRankings()
+    {
+        const request = new XMLHttpRequest();
+        url = "https://raw.githubusercontent.com/feiteng-gcp/submission_history/master/assets/submission.json";
+        request.open("get", url);
+
+        request.onload = () => 
+        {
+            const json = JSON.parse(request.responseText);
+            populateRankings(json);
+        };
+
+        request.send();
+    }
+
+    function populateRankings(json)
+    {
+        json.forEach((row) =>
+        {
+        
+            const tr = document.createElement("tr");
+            console.log(json[row])
+
+            row.forEach((cell) => 
+            {
+                const td = document.createElement("td");
+                td.innerHTML = cell;
+                tr.appendChild(td);
+            });
+
+            rankingsBody.appendChild(tr);
+        
+        });
+        
+        
+    }
+
+    document.addEventListener("DOMContentLoaded", () => { loadRankings(); });
+
+</script>
+
+
+</body>
+</html>
