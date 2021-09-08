@@ -18,6 +18,7 @@
     <div style="margin: 25px"> 
         <h3>养老对赌刷题小组 第5轮</h3>
         <h4>Deadline: 9/26/2021</h4>
+        <h4>Last Crawled: <div id="lastModifiedTime"></div></h4>
     </div>   
 
     <div class='col' style="height: 200px;width: 150px;font-size: xx-small; margin:25px" >
@@ -32,21 +33,51 @@
 
 <script type="text/javascript">
     const rankingsBody = document.querySelector("#myTable > tbody")
+    
 
     function loadRankings()
     {
         const request = new XMLHttpRequest();
-        // url = "https://raw.githubusercontent.com/feiteng-gcp/submission_history/master/assets/submission.json";
-        url = "assets/submission.json";
+        url = "https://raw.githubusercontent.com/feiteng-gcp/submission_history/master/assets/submission.json";
+        // url = "assets/submission.json";
         request.open("get", url);
 
         request.onload = () => 
         {
             const json = JSON.parse(request.responseText);
+            
             populateRankings(json);
+            
         };
-
         request.send();
+    }
+
+    function loadModificationTime() {
+        
+        var xhttp = new XMLHttpRequest();
+
+        url = "https://raw.githubusercontent.com/feiteng-gcp/submission_history/master/assets/last_modified.json";
+        
+        xhttp.open("get", url);
+
+        xhttp.onload = () => 
+        {
+            // console.log(xhttp.responseText);
+            // const json = JSON.parse(xhttp.responseText);
+            
+            populateModifiedTime(xhttp.responseText);
+            
+        };
+        xhttp.send();
+
+    }
+
+    function populateModifiedTime(modified_time)
+    {
+        var last_modified = document.querySelector("#lastModifiedTime");
+        // modified_time.forEach((item)=>{
+        last_modified.innerHTML = modified_time;
+        // });
     }
 
     function populateRankings(json)
@@ -71,7 +102,10 @@
         
     }
 
-    document.addEventListener("DOMContentLoaded", () => { loadRankings(); });
+    document.addEventListener("DOMContentLoaded", () => { 
+        loadRankings(); 
+        loadModificationTime(); 
+    });
 
 </script>
 
