@@ -26,11 +26,17 @@ Github Pages 链接: https://feiteng-gcp.github.io/submission_history
   $ logout #进行断开
   
   # 再次登录GCP后，如何关闭这个脚本？
-  $ ps -aux | grep python3 
+  [li_feiteng@instance-1 ~]$ ps -aux | grep python3
+  li_feit+  7044  0.4  3.1 220196 18980 ?        S    Sep08   0:13 python3 main.py
+  li_feit+  7536  0.0  1.0 141976  6452 ?        S    Sep03   0:29 python3 script.py
+  li_feit+  8832  0.0  0.1 112812   976 pts/0    S+   00:02   0:00 grep --color=auto python3
+  li_feit+ 29496  2.2  3.6 223024 21608 ?        S    Sep08   7:28 python3 fetchContesData.py
   # 这里会找到 python3 在运行的脚本，找到PID
-  $ kill -9 [对应的PID] #即可
   
+  $ kill -9 [对应的PID] #即可
   ```
+
+  ![image-20210909000316973](C:\Users\lifeiteng\AppData\Roaming\Typora\typora-user-images\image-20210909000316973.png)
 
   - 提前安装所需library: requests, json, pytz 等
 
@@ -61,7 +67,7 @@ Github Pages 链接: https://feiteng-gcp.github.io/submission_history
 
 会得到:
 
-- assets/submission.json - 提交记录
+- assets/submission.json - 提交记录，如果有人提交，才会被github接受新文件
 - assets/last_modified.json - 本次运行的时间
 
 这两份文件会在index.html 中用到
