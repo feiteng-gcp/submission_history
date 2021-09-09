@@ -14,6 +14,9 @@ Github Pages 链接: https://feiteng-gcp.github.io/submission_history
 
 - `git clone https://github.com/feiteng-gcp/submission_history.git` 到本地
 - 更改以下内容：
+  - Username_LeetcodeID.json - 用户leetcode id : 用户昵称
+  - CSRF_TOKEN - 登录后的csrftoken
+  - Question_List - 准备提交的题目
 
 ![image-20210908234133267](C:\Users\lifeiteng\AppData\Roaming\Typora\typora-user-images\image-20210908234133267.png)
 
@@ -35,8 +38,6 @@ Github Pages 链接: https://feiteng-gcp.github.io/submission_history
   
   $ kill -9 [对应的PID] #即可
   ```
-
-  ![image-20210909000316973](C:\Users\lifeiteng\AppData\Roaming\Typora\typora-user-images\image-20210909000316973.png)
 
   - 提前安装所需library: requests, json, pytz 等
 
