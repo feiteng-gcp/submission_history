@@ -46,7 +46,6 @@ def loadTargetQuestion_metaData():
     return targetQuestions
 
 def writeToFile(UserNameDict, Question_Dict, submission, fileName):
-
     curTime = datetime.now(pytz.timezone('America/New_York'))
     cur_time = curTime.strftime('%Y %b %d %H:%M %p %z')
     # timer keeps updating first row in file, even if no one has new submissions
