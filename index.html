@@ -4,45 +4,13 @@
     <meta charset="UTF-8">
     <title>Table</title>
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="">
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <script type="text/javascript" src="https://cdn.datatables.net/1.11.1/js/jquery.dataTables.min.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#example').DataTable(
-                {
-                    'ajax' : 'https://raw.githubusercontent.com/feiteng-gcp/submission_history/master/assets/submission_.json',
-                    'columns':[
-                        {'data':'question_id'},
-                        {'data':'question_link'},
-                        {'data':'yaya'},
-                        {'data':'Wayne'},
-                        {'data':'Lu'},
-                        {'data':'Jsu'},
-                        {'data':'Emily'},
-                        {'data':'Yuwei'},
-                        {'data':'Danli'},
-                        {'data':'Miaomiao'},
-                        {'data':'Little Lee'},
-                        {'data':'Tim'},
-                        {'data':'Strawberry'},
-                        {'data':'pikapika'},
-                        {'data':'Caoyan'},
-                        {'data':'Max Chip'},
-                        {'data':'Ames'},
-                        {'data':'kingsley'},
-                        {'data':'Peter Cai'},
-                        {'data':'busimiao'},
-                        {'data':'yigepangzi'},
-                        {'data':'Kangkai'}
-                    ],
-                    "pageLength":25
-                });
-        } );
-    </script>   
+    <style type="text/css">
+        
+    </style>
 
 </head>
 <body>
@@ -53,41 +21,16 @@
         <h4><a href="https://github.com/feiteng-gcp/">Last Crawled</a>: <span id="lastModifiedTime"></span></h4>
     </div>   
 
-    <!-- <div style="height: 10px;width: 30px;font-size: xx-small; margin:0px" > -->
+    <div class='col' style="height: 200px;width: 150px;font-size: xx-small; margin:25px" >
         
-        <table id="example" class="display" style="font-size: xx-small;text-align:center">
-            <thead> 
-                <tr>
-                    <td>Question ID</td>
-                    <td>Question Link</td>
-                    <td>yaya</td>
-                    <td>Wayne</td>
-                    <td>Lu</td>
-                    <td>Jsu</td>
-                    <td>Emily</td>
-                    <td>Yuwei</td>
-                    <td>Danli</td>
-                    <td>Miaomiao</td>
-                    <td>Little Lee</td>
-                    <td>Tim</td>
-                    <td>Strawberry</td>
-                    <td>pikapika</td>
-                    <td>Caoyan</td>
-                    <td>Max Chip</td>
-                    <td>Ames</td>
-                    <td>kingsley</td>
-                    <td>Peter Cai</td>
-                    <td>busimiao</td>
-                    <td>yigepangzi</td>
-                    <td>Kangka</td>
-                </tr>
-            </thead>
+        <table id="myTable" class="table table-bordered table-hover table-sm table-responsive">
+            <thead> </thead>
             <tbody> </tbody>
         </table>
 
-<!--     </div>
- -->
-<!-- 
+    </div>
+
+
 <script type="text/javascript">
     const rankingsBody = document.querySelector("#myTable > tbody")
     
@@ -143,7 +86,7 @@
         {
         
             const tr = document.createElement("tr");
-            // console.log(json[row])
+            console.log(json[row])
 
             row.forEach((cell) => 
             {
@@ -164,7 +107,7 @@
         loadModificationTime(); 
     });
 
-</script> -->
+</script>
 
 
 </body>
