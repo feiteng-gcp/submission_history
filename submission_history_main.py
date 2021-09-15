@@ -8,7 +8,7 @@ if __name__ == '__main__':
     USERNAME_FILE = 'Username_LeetcodeID.json'
     CRAWLED_FILE = 'Crawled.json'
     # Submission_File = 'index.md'
-    SUBMISSION_RECORD = 'assets/submission_.json'
+    SUBMISSION_RECORD = 'assets/submission.json'
     LAST_MODIFIED_RECORD = 'assets/last_modified.json'
 
     CSRF_TOKEN = IO_Helper.readToken()
@@ -31,7 +31,8 @@ if __name__ == '__main__':
         IO_Helper.writeJSON(CRAWLED_FILE, submissionResult)
 
         # writeToFile(USERNAME_DICT, QUESTION_DICT, submissionResult, Submission_File)
-        IO_Helper.writeRecord(USERNAME_DICT, QUESTION_DICT, submissionResult, SUBMISSION_RECORD)
+        # IO_Helper.writeRecord(USERNAME_DICT, QUESTION_DICT, submissionResult, SUBMISSION_RECORD)
+        IO_Helper.writeToJSON_(USERNAME_DICT, QUESTION_DICT, submissionResult, SUBMISSION_RECORD)
         IO_Helper.updateFile(LAST_MODIFIED_RECORD)
 
         # commit_and_pushtoGithub(Submission_File)
