@@ -8,13 +8,16 @@ def readToken():
     with open('CSRF_TOKEN', 'r') as f:
         return f.readline()
 
+# def writeFile(fileName, file_content):
+
+
 def loadJSON(fileName, defaultOutput):
     dict = defaultOutput
     file_backup = 'backup/' + fileName
     # try:
     f = open(fileName, 'r')
     dict = json.load(f)
-    writeFile(dict, file_backup)
+    writeJSON(file_backup, dict)
     f.close()
     # except Exception: pass
     return dict
@@ -83,7 +86,7 @@ def writeToFile(UserNameDict, Question_Dict, submission, fileName):
         print(err)
     if flag: print('Successfully written to file..')
 
-def writeToJSON(UserNameDict, Question_Dict, submission, fileName):
+def writeRecord(UserNameDict, Question_Dict, submission, fileName):
 
     curTime = datetime.now(pytz.timezone('America/New_York'))
     cur_time = curTime.strftime('%Y %b %d %H:%M %p %z')
@@ -93,60 +96,78 @@ def writeToJSON(UserNameDict, Question_Dict, submission, fileName):
     # banner = update_time + '\n\n'
 
     flag = True
-    content = [] #collections.OrderedDict()
+    content = {} #collections.OrderedDict()
+    content['data'] = []
 
     # banner += '|Question ID|Question Link|'
-    nameList = ['Question ID', 'Question Link']
-    for name in submission:
+    rows = []
+    # nameList = ['Question ID', 'Question Link']
+    # for name in submission:
         # banner += UserNameDict[name] + '|'
-        nameList.append(UserNameDict[name])
+        # nameList.append(UserNameDict[name])
     
 
     submission_count = {}
-    content_pt2 = []
+    submission_count['question_id'] = 'Submission Count'
+    submission_count['question_link'] = '#'
+    # content_pt2 = []
+    rows = []
 
     for targ_question in Question_Dict:
-        contentList = [targ_question]
+        eachrow = {}
+        eachrow['question_id'] = targ_question
+
+
         # print(targ_question)
         question_slug = Question_Dict[targ_question]['question_slug']
         questionLink = 'https://leetcode.com/problems/' + question_slug
         question_href = '<a href="' + questionLink + '">' + question_slug + "</a>"
-        contentList.append(question_href)
+        
+        eachrow['question_link'] = question_href
 
         # banner = '|' + targ_question + '|[' + question_slug + '](' + questionLink + ')|'
-        for name in submission:
-            if name not in submission_count: submission_count[name] = 0
-            if targ_question in submission[name]:
-                # banner += submission[name][targ_question] + '|'
-                contentList.append(submission[name][targ_question])    
-                submission_count[name] += 1
+        for leetcode_name in submission:
+            user_name = UserNameDict[leetcode_name]
+            if user_name not in submission_count: submission_count[user_name] = 0
+            
+            if targ_question in submission[leetcode_name]:
+                # banner += submission[leetcode_name][targ_question] + '|'
+                # user_name = UserNameDict[leetcode_name]
+                eachrow[user_name] = submission[leetcode_name][targ_question]
+                # contentList.append(submission[leetcode_name][targ_question])
+                submission_count[user_name] += 1
             else:
                 # banner += '#n/a|'
-                contentList.append('#n/a')
+                eachrow[user_name] = '#n/a'
+                # contentList.append('#n/a')
         
-        # content[targ_question] = contentList
-        # f.close()
-        content_pt2.append(contentList)
-    # try:
-    submission_record_count = ['Submission Count', '#']
-    for name in submission:
-        submission_record_count.append(str(submission_count[name]))
-    content.append(submission_record_count)
-    content.append(nameList)
-    for each_content in content_pt2:
-        content.append(each_content)
-    with open(fileName, 'w') as f:
-        json.dump(content, f)
-    # except Exception as err:
+        rows.append(eachrow)
+    
+    # submission_record_count = ['Submission Count', '#']
+    
+    # for name in submission:
+    #     submission_record_count.append(str(submission_count[name]))
+    content['data'].append(submission_count)
+    for each_row in rows:
+        content['data'].append(each_row)
+    # content.append(submission_record_count)
+    # content.append(nameList)
+    # for each_content in content_pt2:
+    #     content.append(each_content)
+    # with open(fileName, 'w') as f:
+    #     json.dump(content, f)
+    # # except Exception as err:
     #     flag = False
     #     print(err)
-    if flag: print('Successfully written to file..' + fileName)
+    # if flag: print('Successfully written to file..' + fileName)
+    writeJSON('assets/submission_.json', content)
 
 
-def writeFile(data, fileName):
+def writeJSON(fileName, data):
     # if not os.path.exists(fileName): os.path.mkdir(fileName)
-    with open(fileName, 'w') as f:
-        json.dump(data, f)    
+    f = open(fileName, 'w')
+    json.dump(data, f)
+    f.close()
 
 
 
@@ -172,7 +193,7 @@ def commit_and_pushtoGithub(file):
     print('commiting file.. %s' % (file))
     curTime = datetime.now(pytz.timezone('America/New_York'))
     cur_time = curTime.strftime('%Y %b %d %H:%M %p %z')
-    commit_message = 'auto committed on .. ' + cur_time
+    commit_message = '%s auto committed on .. %s ' % (file, cur_time)
     print('Starting to push..')
 
     push_successful = True
