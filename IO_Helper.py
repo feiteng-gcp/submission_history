@@ -163,6 +163,65 @@ def writeRecord(UserNameDict, Question_Dict, submission, fileName):
     writeJSON('assets/submission_.json', content)
 
 
+def writeToJSON_(UserNameDict, Question_Dict, submission, fileName):
+
+    curTime = datetime.now(pytz.timezone('America/New_York'))
+    cur_time = curTime.strftime('%Y %b %d %H:%M %p %z')
+    # timer keeps updating first row in file, even if no one has new submissions
+    # update_time = '# File updated on..' + cur_time
+    
+    # banner = update_time + '\n\n'
+
+    flag = True
+    content = [] #collections.OrderedDict()
+
+    # banner += '|Question ID|Question Link|'
+    nameList = ['Question ID', 'Question Link']
+    for name in submission:
+        # banner += UserNameDict[name] + '|'
+        nameList.append(UserNameDict[name])
+    
+
+    submission_count = {}
+    content_pt2 = []
+
+    for targ_question in Question_Dict:
+        contentList = [targ_question]
+        # print(targ_question)
+        question_slug = Question_Dict[targ_question]['question_slug']
+        questionLink = 'https://leetcode.com/problems/' + question_slug
+        question_href = '<a href="' + questionLink + '">' + question_slug + "</a>"
+        contentList.append(question_href)
+
+        # banner = '|' + targ_question + '|[' + question_slug + '](' + questionLink + ')|'
+        for name in submission:
+            if name not in submission_count: submission_count[name] = 0
+            if targ_question in submission[name]:
+                # banner += submission[name][targ_question] + '|'
+                contentList.append(submission[name][targ_question])    
+                submission_count[name] += 1
+            else:
+                # banner += '#n/a|'
+                contentList.append('#n/a')
+        
+        # content[targ_question] = contentList
+        # f.close()
+        content_pt2.append(contentList)
+    # try:
+    submission_record_count = ['Submission Count', '#']
+    for name in submission:
+        submission_record_count.append(str(submission_count[name]))
+    content.append(submission_record_count)
+    content.append(nameList)
+    for each_content in content_pt2:
+        content.append(each_content)
+    with open(fileName, 'w') as f:
+        json.dump(content, f)
+    # except Exception as err:
+    #     flag = False
+    #     print(err)
+    if flag: print('Successfully written to file..' + fileName)
+
 def writeJSON(fileName, data):
     # if not os.path.exists(fileName): os.path.mkdir(fileName)
     f = open(fileName, 'w')
