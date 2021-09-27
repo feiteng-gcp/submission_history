@@ -43,7 +43,7 @@ def getSubmission(USERNAME, CSRF_Token, submission_result, Question_Dict, Title_
                 if submissionStatus == 'Accepted':
                     timeStamp = each_submission['timestamp']
                     submissionTime = datetime.fromtimestamp((int)(timeStamp), pytz.timezone('America/New_York'))
-                    submissionTime = submissionTime.strftime('%Y %b %d %H:%M %p')
+                    submissionTime = submissionTime.strftime('%Y-%b-%d')
                     if questionTitle in submission_result[USERNAME]: continue
                     submission_result[USERNAME][Title_ID[questionTitle]] = submissionTime
     # print(submission_result)

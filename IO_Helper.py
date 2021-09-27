@@ -167,13 +167,10 @@ def writeToJSON_(UserNameDict, Question_Dict, submission, fileName):
 
     curTime = datetime.now(pytz.timezone('America/New_York'))
     cur_time = curTime.strftime('%Y %b %d %H:%M %p %z')
-    # timer keeps updating first row in file, even if no one has new submissions
-    # update_time = '# File updated on..' + cur_time
     
-    # banner = update_time + '\n\n'
 
     flag = True
-    content = [] #collections.OrderedDict()
+    content = [] 
 
     # banner += '|Question ID|Question Link|'
     nameList = ['Question ID', 'Question Link']
