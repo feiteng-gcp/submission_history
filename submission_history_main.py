@@ -22,10 +22,13 @@ if __name__ == '__main__':
 
     rootLogger = Logger.getLogger("root")
 
+    thres_datetime = datetime(2021, 9, 27)
+    thres = thres_datetime.timestamp()
+
 
     while True:
         submissionResult = Crawlers.getSubmissions(USERNAME_DICT,CSRF_TOKEN,
-            CRAWLED_RESULT, QUESTION_DICT, QUESTION_TITLE_ID)
+            CRAWLED_RESULT, QUESTION_DICT, QUESTION_TITLE_ID, thres)
 
         # print(submissionResult)
         IO_Helper.writeJSON(CRAWLED_FILE, submissionResult)

@@ -1,20 +1,20 @@
 import requests, json, time, collections, os, subprocess, collections
 from datetime import datetime
-import pytz
+import pytz, traceback
 
-def getSubmissions(USERNAMES, CSRF_Token, submission_result, Question_Dict, Title_ID):
+def getSubmissions(USERNAMES, CSRF_Token, submission_result, Question_Dict, Title_ID, max_starting_time):
     crawl_successful = True
     try:
         for username in USERNAMES:
-            getSubmission(username, CSRF_Token, submission_result, Question_Dict, Title_ID)
+            getSubmission(username, CSRF_Token, submission_result, Question_Dict, Title_ID, max_starting_time)
     except Exception as error:
         crawl_successful = False
-        print(error)
+        traceback.print_exc()
         pass
     if crawl_successful: print('Successfully crawled submission..')
     return submission_result
 
-def getSubmission(USERNAME, CSRF_Token, submission_result, Question_Dict, Title_ID):
+def getSubmission(USERNAME, CSRF_Token, submission_result, Question_Dict, Title_ID, max_starting_time):
     print('Getting submission for %s..' % (USERNAME))
     if USERNAME not in submission_result: submission_result[USERNAME] = {}
     COOKIE = 'csrftoken=' + CSRF_Token
@@ -36,18 +36,21 @@ def getSubmission(USERNAME, CSRF_Token, submission_result, Question_Dict, Title_
         # print(resptext)
         submissionList = resptext['data']['recentSubmissionList']
 
+
         for each_submission in submissionList:
             questionTitle = each_submission['title']
             if questionTitle in Title_ID:
                 submissionStatus = each_submission['statusDisplay']
                 if submissionStatus == 'Accepted':
                     timeStamp = each_submission['timestamp']
+                    if int(timeStamp) < max_starting_time: continue
                     submissionTime = datetime.fromtimestamp((int)(timeStamp), pytz.timezone('America/New_York'))
                     submissionTime = submissionTime.strftime('%Y-%b-%d')
                     if questionTitle in submission_result[USERNAME]: continue
                     submission_result[USERNAME][Title_ID[questionTitle]] = submissionTime
     # print(submission_result)
     except Exception as error:
+        traceback.print_exc()
         print("Error when crawling..%s" % (USERNAME))
         print(Exception)
 
