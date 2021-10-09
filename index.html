@@ -8,6 +8,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+
     <style type="text/css">
         
     </style>
@@ -30,27 +32,56 @@
 
     </div>
 
+    <script type="text/javascript">
+        window.onload = function () {
+            var datamap = new Map();
+            rating_url = 'https://raw.githubusercontent.com/feiteng-gcp/leetcode_contest/master/question_internal_rating_web.json';
+            $.getJSON(rating_url, function(data) 
+            {
+                $.each(data['data'], function(key, value)
+                {
+                    frontend_id = value['frontend_id'];
+                    question_link = value['rating'];
+                    // datamap[frontend_id] = question_link;
+                    datamap.set(frontend_id, question_link);
+                }); 
+                submission_url = "https://raw.githubusercontent.com/feiteng-gcp/submission_history/master/assets/submission.json";
+                $.getJSON(submission_url + "?" + ((new Date()).getTime()), function(data)
+                {
+                    populateRankings(data, datamap);
+                });        
+            });
+
+
+        }
+
+
+
+        
+        
+
+    </script>
+
 
 <script type="text/javascript">
     const rankingsBody = document.querySelector("#myTable > tbody")
     
 
-    function loadRankings()
-    {
-        const request = new XMLHttpRequest();
-        url = "https://raw.githubusercontent.com/feiteng-gcp/submission_history/master/assets/submission.json";
-        // url = "assets/submission.json";
-        request.open("get", url + "?" + ((new Date()).getTime()));
+    // function loadRankings()
+    // {
+    //     const request = new XMLHttpRequest();
+    //     submission_url = "https://raw.githubusercontent.com/feiteng-gcp/submission_history/master/assets/submission.json";
+    //     request.open("get", submission_url + "?" + ((new Date()).getTime()));
 
-        request.onload = () => 
-        {
-            const json = JSON.parse(request.responseText);
+    //     request.onload = () => 
+    //     {
+    //         const json = JSON.parse(request.responseText);
             
-            populateRankings(json);
+    //         populateRankings(json);
             
-        };
-        request.send();
-    }
+    //     };
+    //     request.send();
+    // }
 
     function loadModificationTime() {
         
@@ -80,30 +111,91 @@
         // });
     }
 
-    function populateRankings(json)
+    function populateRankings(json, datamap)
     {
-        json.forEach((row) =>
+        let rows = json.length;
+        firstrow(json[0]);
+        secondrow(json[1]);
+        for(let i = 2; i < rows; i++)
         {
-        
+            let len = json[i].length;
             const tr = document.createElement("tr");
-            console.log(json[row])
-
-            row.forEach((cell) => 
+            for(let j = 0; j < 2; j++)
             {
                 const td = document.createElement("td");
-                td.innerHTML = cell;
+                td.innerHTML = json[i][j];
                 tr.appendChild(td);
-            });
+            }
 
+            var question_id = json[i][0];
+
+
+            const td = document.createElement("td");
+            if(datamap.has(question_id))
+                td.innerHTML = datamap.get(question_id);
+            else td.innerHTML = "#n/a";
+            tr.appendChild(td);
+
+            for(let j = 2; j < len; j++)
+            {
+                const td = document.createElement("td");
+                td.innerHTML = json[i][j];
+                tr.appendChild(td);
+            }
             rankingsBody.appendChild(tr);
-        
-        });
-        
-        
+        }        
+    }
+
+    function firstrow(data)
+    {
+        let len = data.length;
+        const tr = document.createElement("tr");
+        for(let j = 0; j < 2; j++)
+        {
+            const td = document.createElement("td");
+            td.innerHTML = data[j];
+            tr.appendChild(td);
+        }
+
+        const td = document.createElement("td");
+        td.innerHTML = "#";
+        tr.appendChild(td);
+
+        for(let j = 2; j < len; j++)
+        {
+            const td = document.createElement("td");
+            td.innerHTML = data[j];
+            tr.appendChild(td);
+        }
+        rankingsBody.appendChild(tr);
+    }
+
+    function secondrow(data)
+    {
+        let len = data.length;
+        const tr = document.createElement("tr");
+        for(let j = 0; j < 2; j++)
+        {
+            const td = document.createElement("td");
+            td.innerHTML = data[j];
+            tr.appendChild(td);
+        }
+
+        const td = document.createElement("td");
+        td.innerHTML = "Question Rating";
+        tr.appendChild(td);
+
+        for(let j = 2; j < len; j++)
+        {
+            const td = document.createElement("td");
+            td.innerHTML = data[j];
+            tr.appendChild(td);
+        }
+        rankingsBody.appendChild(tr);
     }
 
     document.addEventListener("DOMContentLoaded", () => { 
-        loadRankings(); 
+        // loadRankings(); 
         loadModificationTime(); 
     });
 
