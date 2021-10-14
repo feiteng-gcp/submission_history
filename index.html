@@ -35,7 +35,8 @@
     <script type="text/javascript">
         window.onload = function () {
             var datamap = new Map();
-            rating_url = 'https://raw.githubusercontent.com/feiteng-gcp/leetcode_contest/master/question_internal_rating_web.json';
+            // rating_url = 'https://raw.githubusercontent.com/feiteng-gcp/leetcode_contest/master/question_internal_rating_web.json';
+            rating_url = 'https://storage.googleapis.com/jplagresult/question_internal_rating_web.json';
             $.getJSON(rating_url, function(data) 
             {
                 $.each(data['data'], function(key, value)
@@ -45,7 +46,8 @@
                     // datamap[frontend_id] = question_link;
                     datamap.set(frontend_id, question_link);
                 }); 
-                submission_url = "https://raw.githubusercontent.com/feiteng-gcp/submission_history/master/assets/submission.json";
+                // submission_url = "https://raw.githubusercontent.com/feiteng-gcp/submission_history/master/assets/submission.json";
+                submission_url = 'https://storage.googleapis.com/yanglaoduidu/assets/submission.json';
                 $.getJSON(submission_url + "?" + ((new Date()).getTime()), function(data)
                 {
                     populateRankings(data, datamap);
@@ -87,7 +89,8 @@
         
         var xhttp = new XMLHttpRequest();
 
-        url = "https://raw.githubusercontent.com/feiteng-gcp/submission_history/master/assets/last_modified.json";
+        // url = "https://raw.githubusercontent.com/feiteng-gcp/submission_history/master/assets/last_modified.json";
+        url = "https://storage.googleapis.com/yanglaoduidu/assets/last_modified.json";
         
         xhttp.open("get", url + "?" + ((new Date()).getTime()));
 

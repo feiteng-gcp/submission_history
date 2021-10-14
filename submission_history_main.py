@@ -2,7 +2,7 @@ import requests, json, time, collections, os, subprocess, collections
 from datetime import datetime
 import pytz
 
-import Crawlers, IO_Helper, Logger
+import Crawlers, IO_Helper, Logger, Upload
 
 if __name__ == '__main__':
     USERNAME_FILE = 'Username_LeetcodeID.json'
@@ -39,8 +39,10 @@ if __name__ == '__main__':
         IO_Helper.updateFile(LAST_MODIFIED_RECORD)
 
         # commit_and_pushtoGithub(Submission_File)
-        IO_Helper.commit_and_pushtoGithub(SUBMISSION_RECORD)
-        IO_Helper.commit_and_pushtoGithub(LAST_MODIFIED_RECORD)
+        # IO_Helper.commit_and_pushtoGithub(SUBMISSION_RECORD)
+        # IO_Helper.commit_and_pushtoGithub(LAST_MODIFIED_RECORD)
+        Upload.upload_file(SUBMISSION_RECORD)
+        Upload.upload_file(LAST_MODIFIED_RECORD)
 
         rootLogger.info('Waiting 60 seconds for next crawl..')
         time.sleep(60)

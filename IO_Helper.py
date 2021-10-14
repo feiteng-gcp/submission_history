@@ -165,6 +165,9 @@ def writeRecord(UserNameDict, Question_Dict, submission, fileName):
 
 def writeToJSON_(UserNameDict, Question_Dict, submission, fileName):
 
+    # print(UserNameDict)
+    # return
+
     curTime = datetime.now(pytz.timezone('America/New_York'))
     cur_time = curTime.strftime('%Y %b %d %H:%M %p %z')
     

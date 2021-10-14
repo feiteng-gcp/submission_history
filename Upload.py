@@ -22,6 +22,9 @@ def upload_blob(bucket_name, source_file_name, destination_blob_name):
         )
     )
 
+def upload_file(file_name):
+    upload_blob('yanglaoduidu', file_name, file_name)
+    
 def test():
     file_name = 'test_file_yanglaoduidu'
     upload_blob('yanglaoduidu', file_name, file_name)
