@@ -20,7 +20,7 @@
 
     <div style="margin: 25px"> 
         <h3>养老对赌刷题小组 第5轮</h3>
-        <h4>Deadline: 10/31/2021</h4>
+        <h4>Deadline: <span id="deadline"></span></h4> 
         <h4><a href="https://github.com/feiteng-gcp/submission_history">Last Crawled</a>: <span id="lastModifiedTime"></span></h4>
     </div>   
 
@@ -97,11 +97,23 @@
 
         xhttp.onload = () => 
         {
-            // console.log(xhttp.responseText);
-            // const json = JSON.parse(xhttp.responseText);
-            
-            populateModifiedTime(xhttp.responseText);
-            
+            populateModifiedTime(xhttp.responseText);         
+        };
+        xhttp.send();
+
+    }
+
+    function loadDeadline() {
+        
+        var xhttp = new XMLHttpRequest();
+
+        url = "https://storage.googleapis.com/yanglaoduidu/assets/deadline.json";
+        
+        xhttp.open("get", url + "?" + ((new Date()).getTime()));
+
+        xhttp.onload = () => 
+        {
+            populateDeadline(xhttp.responseText);
         };
         xhttp.send();
 
@@ -113,6 +125,12 @@
         // modified_time.forEach((item)=>{
         last_modified.innerHTML = modified_time;
         // });
+    }
+
+    function populateDeadline(deadline)
+    {
+        var deadline_span = document.querySelector("#deadline");
+        deadline_span.innerHTML = deadline;
     }
 
     function populateRankings(json, datamap)
@@ -201,6 +219,7 @@
     document.addEventListener("DOMContentLoaded", () => { 
         // loadRankings(); 
         loadModificationTime(); 
+        loadDeadline(); 
     });
 
 </script>
