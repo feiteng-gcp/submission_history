@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     CSRF_TOKEN = IO_Helper.readToken()
     Crawlers.updateMetaData(CSRF_TOKEN)
-    USERNAME_DICT = IO_Helper.loadJSON(USERNAME_FILE, {})
+    USERNAME_DICT = IO_Helper.loadJSON(USERNAME_FILE, dict())
     # print(USERNAME_DICT)
     CRAWLED_RESULT = IO_Helper.loadJSON(CRAWLED_FILE, collections.defaultdict(dict))
     
@@ -22,7 +22,7 @@ if __name__ == '__main__':
 
     rootLogger = Logger.getLogger("root")
 
-    thres_datetime = datetime(2021, 9, 27)
+    thres_datetime = datetime(2021, 11, 1)
     thres = thres_datetime.timestamp()
 
 

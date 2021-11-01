@@ -12,15 +12,15 @@ def readToken():
 
 
 def loadJSON(fileName, defaultOutput):
-    dict = defaultOutput
+    default_Return = defaultOutput
     file_backup = 'backup/' + fileName
     # try:
     f = open(fileName, 'r')
-    dict = json.load(f)
-    writeJSON(file_backup, dict)
+    default_Return = json.load(f)
+    writeJSON(file_backup, default_Return)
     f.close()
     # except Exception: pass
-    return dict
+    return default_Return
     
 def loadQuestion():
     question_list = []

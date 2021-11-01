@@ -26,7 +26,7 @@ def upload_file(file_name):
     upload_blob('yanglaoduidu', file_name, file_name)
     
 def test():
-    file_name = 'test_file_yanglaoduidu'
+    file_name = 'assets/deadline.json'
     upload_blob('yanglaoduidu', file_name, file_name)
 
 if __name__ == '__main__':
