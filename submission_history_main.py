@@ -1,3 +1,4 @@
+#-*-coding:utf-8 -*-
 import requests, json, time, collections, os, subprocess, collections
 from datetime import datetime
 import pytz
@@ -10,6 +11,7 @@ if __name__ == '__main__':
     # Submission_File = 'index.md'
     SUBMISSION_RECORD = 'assets/submission.json'
     LAST_MODIFIED_RECORD = 'assets/last_modified.json'
+    SUBMISSION_DEADLINE = 'assets/deadline.json'
 
     CSRF_TOKEN = IO_Helper.readToken()
     Crawlers.updateMetaData(CSRF_TOKEN)
@@ -22,7 +24,7 @@ if __name__ == '__main__':
 
     rootLogger = Logger.getLogger("root")
 
-    thres_datetime = datetime(2021, 11, 1)
+    thres_datetime = datetime(2022, 6, 8)
     thres = thres_datetime.timestamp()
 
 
@@ -43,6 +45,7 @@ if __name__ == '__main__':
         # IO_Helper.commit_and_pushtoGithub(LAST_MODIFIED_RECORD)
         Upload.upload_file(SUBMISSION_RECORD)
         Upload.upload_file(LAST_MODIFIED_RECORD)
+        Upload.upload_file(SUBMISSION_DEADLINE)
 
         rootLogger.info('Waiting 60 seconds for next crawl..')
         time.sleep(60)

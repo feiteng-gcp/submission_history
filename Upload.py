@@ -25,9 +25,9 @@ def upload_blob(bucket_name, source_file_name, destination_blob_name):
 def upload_file(file_name):
     upload_blob('yanglaoduidu', file_name, file_name)
     
-def test():
+def updateDeadline():
     file_name = 'assets/deadline.json'
     upload_blob('yanglaoduidu', file_name, file_name)
 
 if __name__ == '__main__':
-    test()
+    updateDeadline()

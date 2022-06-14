@@ -240,7 +240,7 @@ def createTitleIDMap(questionMap):
 
 
 def updateFile(file):
-    curTime = datetime.now(pytz.timezone('America/New_York'))
+    curTime = datetime.now(pytz.timezone('America/Los_Angeles'))
     cur_time = curTime.strftime('%Y %b %d %H:%M %p %z')
     commit_message = cur_time
     f = open(file, 'w')
