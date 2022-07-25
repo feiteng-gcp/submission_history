@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
     rootLogger = Logger.getLogger("root")
 
-    thres_datetime = datetime(2022, 6, 8)
+    thres_datetime = datetime(2022, 7, 4)
     thres = thres_datetime.timestamp()
 
 
