@@ -29,24 +29,29 @@ if __name__ == '__main__':
 
 
     while True:
-        submissionResult = Crawlers.getSubmissions(USERNAME_DICT,CSRF_TOKEN,
-            CRAWLED_RESULT, QUESTION_DICT, QUESTION_TITLE_ID, thres)
+        try:
+            submissionResult = Crawlers.getSubmissions(USERNAME_DICT,CSRF_TOKEN,
+                CRAWLED_RESULT, QUESTION_DICT, QUESTION_TITLE_ID, thres)
 
-        # print(submissionResult)
-        IO_Helper.writeJSON(CRAWLED_FILE, submissionResult)
+            # print(submissionResult)
+            IO_Helper.writeJSON(CRAWLED_FILE, submissionResult)
 
-        # writeToFile(USERNAME_DICT, QUESTION_DICT, submissionResult, Submission_File)
-        # IO_Helper.writeRecord(USERNAME_DICT, QUESTION_DICT, submissionResult, SUBMISSION_RECORD)
-        IO_Helper.writeToJSON_(USERNAME_DICT, QUESTION_DICT, submissionResult, SUBMISSION_RECORD)
-        IO_Helper.updateFile(LAST_MODIFIED_RECORD)
+            # writeToFile(USERNAME_DICT, QUESTION_DICT, submissionResult, Submission_File)
+            # IO_Helper.writeRecord(USERNAME_DICT, QUESTION_DICT, submissionResult, SUBMISSION_RECORD)
+            IO_Helper.writeToJSON_(USERNAME_DICT, QUESTION_DICT, submissionResult, SUBMISSION_RECORD)
+            IO_Helper.updateFile(LAST_MODIFIED_RECORD)
 
-        # commit_and_pushtoGithub(Submission_File)
-        # IO_Helper.commit_and_pushtoGithub(SUBMISSION_RECORD)
-        # IO_Helper.commit_and_pushtoGithub(LAST_MODIFIED_RECORD)
-        Upload.upload_file(SUBMISSION_RECORD)
-        Upload.upload_file(LAST_MODIFIED_RECORD)
-        Upload.upload_file(SUBMISSION_DEADLINE)
+            # commit_and_pushtoGithub(Submission_File)
+            # IO_Helper.commit_and_pushtoGithub(SUBMISSION_RECORD)
+            # IO_Helper.commit_and_pushtoGithub(LAST_MODIFIED_RECORD)
+            Upload.upload_file(SUBMISSION_RECORD)
+            Upload.upload_file(LAST_MODIFIED_RECORD)
+            Upload.upload_file(SUBMISSION_DEADLINE)
 
-        rootLogger.info('Waiting 60 seconds for next crawl..')
-        time.sleep(60)
+            rootLogger.info('Waiting 60 seconds for next crawl..')
+            time.sleep(60)
+        except Exception as err:
+            print(err)
+            time.sleep(60)
+
 

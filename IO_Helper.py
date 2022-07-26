@@ -15,7 +15,7 @@ def loadJSON(fileName, defaultOutput):
     default_Return = defaultOutput
     file_backup = 'backup/' + fileName
     # try:
-    f = open(fileName, 'r')
+    f = open(fileName, 'r', encoding='utf8')
     default_Return = json.load(f)
     writeJSON(file_backup, default_Return)
     f.close()
