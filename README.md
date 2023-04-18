@@ -18,7 +18,6 @@ Github Pages 链接: https://feiteng-gcp.github.io/submission_history
   - CSRF_TOKEN - 登录后的csrftoken
   - Question_List - 准备提交的题目
 
-![image-20210908234133267](C:\Users\lifeiteng\AppData\Roaming\Typora\typora-user-images\image-20210908234133267.png)
 
 - 在Google Cloud Platform (GCP) 平台:
 
@@ -29,11 +28,6 @@ Github Pages 链接: https://feiteng-gcp.github.io/submission_history
   $ logout #进行断开
   
   # 再次登录GCP后，如何关闭这个脚本？
-  [li_feiteng@instance-1 ~]$ ps -aux | grep python3
-  li_feit+  7044  0.4  3.1 220196 18980 ?        S    Sep08   0:13 python3 main.py
-  li_feit+  7536  0.0  1.0 141976  6452 ?        S    Sep03   0:29 python3 script.py
-  li_feit+  8832  0.0  0.1 112812   976 pts/0    S+   00:02   0:00 grep --color=auto python3
-  li_feit+ 29496  2.2  3.6 223024 21608 ?        S    Sep08   7:28 python3 fetchContesData.py
   # 这里会找到 python3 在运行的脚本，找到PID
   
   $ kill -9 [对应的PID] #即可
